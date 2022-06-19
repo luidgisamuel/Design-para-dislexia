@@ -1,0 +1,58 @@
+:root {
+  --botao-confirmar:  #517EB1;
+  --texto-confirmar: #fff;
+  --icone-confirmar: #fff;
+  --botao-confirmar--hover:  #0000FF;  
+}
+
+.btn-confirmar{
+  color: var(--texto-confirmar);
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: var(--botao-confirmar);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.btn-confirmar:hover {
+  background-color: var(--botao-confirmar--hover);
+  box-shadow: 0 0 10px var(--botao-confirmar--hover),  0 0 2px var(--botao-confirmar--hover);
+}
+
+.botao__icone {
+  margin-right: 4px;   
+  fill:var(--icone-confirmar);
+} 
+
+/*#############################################################################*/
+@media (max-width: 450px) {
+  .btn-confirmar{    
+    font-size: 0.5rem;
+    margin-bottom: 10px; 
+  }
+
+  .botao__icone{
+    width:12px;
+    height:10px;   
+  } 
+}
+
+/*#############################################################################*/
+@media (min-width: 1400px) {
+  .btn-confirmar{    
+    font-size: 1.8rem;
+  }
+  
+  .botao__icone {
+    width:24px;
+    height:22px;   
+  } 
+}
+
+

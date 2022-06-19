@@ -1,0 +1,47 @@
+:root {
+  --botao:  #517EB1;
+  --texto: #fff;
+  --icone: #fff;
+  --botao--hover:  #0000FF;  
+}
+
+.btn{
+  color: var(--texto);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--botao);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: var(--botao--hover);
+  box-shadow: 0 0 10px var(--botao--hover),  0 0 2px var(--botao--hover);
+}
+
+.icone {
+  margin-right: 10px;  
+  font-size: 2rem;
+} 
+
+/*#############################################################################*/
+@media (max-width: 450px) {
+  .btn{    
+    font-size: 0.5rem;
+    margin-bottom: 10px; 
+  }}
+
+/*#############################################################################*/
+@media (min-width: 1400px) {
+  .btn{    
+    font-size: 1.4rem;
+  }
+}
+
+

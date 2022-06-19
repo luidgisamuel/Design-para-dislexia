@@ -1,0 +1,59 @@
+:root {
+  --botao-cancelar: #E84118;
+  --texto-cancelar: #fff;
+  --icone-cancelar: #fff;
+  --botao-cancelar--hover: #FF0000;  
+}
+
+.btn-cancelar {
+  color: var(--texto-cancelar);
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding: 5px;
+  background-color: var(--botao-cancelar);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.btn-cancelar:hover {
+  background-color: var(--botao-cancelar--hover);
+  box-shadow: 0 0 10px  var(--botao-cancelar--hover),  0 0 2px var(--botao-cancelar--hover);
+}
+
+.botao__icone {
+  margin-right: 4px;   
+  fill: var(--icone-cancelar);
+} 
+
+/*#############################################################################*/
+@media (max-width: 450px) {
+  .btn-cancelar{    
+    font-size: 0.5rem;
+    margin-bottom: 10px; 
+  }
+
+  .botao__icone{
+    width:12px;
+    height:10px;   
+  } 
+}
+
+/*#############################################################################*/
+@media (min-width: 1400px) {
+  .btn-cancelar{    
+    font-size: 1.8rem;
+  }
+  
+  .botao__icone {
+    width:24px;
+    height:22px;    
+  } 
+}

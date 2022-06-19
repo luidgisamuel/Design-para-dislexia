@@ -1,0 +1,77 @@
+:root {
+  --botao-novo:  #00B75B;
+  --texto-novo: #fff;
+  --botao-novo--hover:   #32CD32;  
+}
+
+.btn-novo {
+  color: var(--texto-novo);
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;  
+  background-color: var(--botao-novo);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.btn-novo:hover {
+  background-color: var(--botao-novo--hover);
+  box-shadow: 0 0 10px  var(--botao-novo--hover),  0 0 2px var(--botao-novo--hover);
+}
+
+.botao__icone-novo {
+  margin-right: 4px; 
+} 
+
+/*#############################################################################*/
+@media (max-width: 450px) {  
+  .btn-novo{    
+    font-size: 10px;
+  }
+
+  .botao__icone-novo{
+    width:12px;
+    height:10px;   
+  } 
+}
+
+/*#############################################################################*/
+@media (max-width: 450px) {
+  .btn-novo{    
+    font-size: 10px;
+  }
+
+  .botao__icone-novo {
+    width:13px;
+    height:11px;   
+  } 
+}
+
+/*#############################################################################*/
+@media (max-width: 350px) {
+  .btn-novo{    
+    font-size: 0.5rem;
+    margin-bottom: 10px; 
+  }
+
+  .botao__icone-novo {
+    width:11px;
+    height:9px;   
+  } 
+}
+
+/*#############################################################################*/
+@media (min-width: 1400px) {
+  .btn-novo{    
+    font-size: 1.8rem;
+  }
+  
+  .botao__icone-novo {
+    width:26px;
+    height:30px;   
+  } 
+}

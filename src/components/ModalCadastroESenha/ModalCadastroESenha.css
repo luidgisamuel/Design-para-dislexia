@@ -1,0 +1,258 @@
+:root {
+  --modal-cadastro-senha__overlay-background: rgba(0, 0, 0, .4);
+  --modal-cadastro-senha-background: #fff;
+  --modal-cadastro-senha-titulo: #517EB1;  
+  --modal-cadastro-senha-label:  #517EB1;  
+  --modal-cadastro-senha-required:#E84118;  
+  --modal-cadastro-senha-input:#ccc;  
+  --modal-cadastro-senha-success:#2ecc71;   
+  --modal-cadastro-senha-error: red;     
+}
+
+.modal__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000 ;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--modal-cadastro-senha__overlay-background);
+}
+
+.modal__container {
+  position: relative;
+  background-color: var(--modal-cadastro-senha-background);
+  border-radius: 10px;  
+  width: 350px;
+  padding: 30px;
+}
+
+.modal__title {
+  font-size: 1.5rem; 
+  color: var(--modal-cadastro-senha-titulo);
+  font-weight: bolder;
+  text-align: left;
+}
+
+.modal__required-field-title{ 
+  color: var(--modal-cadastro-senha-required);
+  font-size: 0.8rem;
+  margin-top: 13px;   
+  vertical-align: bottom;     
+  text-align: left;
+}
+
+.modal__required-field {
+  color: var(--modal-cadastro-senha-required);
+}
+
+.modal__field{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;  
+  align-items: left;
+  padding-bottom: 10px;
+}
+
+.modal__field-label {
+  text-align: left;
+  font-size: 1.2rem;
+  color: var(--modal-cadastro-senha-label);  
+}
+
+.modal__field-input-senha,
+.modal__field-input {
+  border: 2px solid var(--modal-cadastro-senha-input);
+  border-radius: 5px;
+  padding:  0.25rem 0 .25rem 0;
+  width: 271px;
+  padding-inline-start: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.modal__field-input-senha{    
+  position: relative; 
+}
+
+.modal__field-input-icons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__field-input-icons-container.success .modal__field-input,
+.modal__field-input-icons-container.success .modal__field-input-senha{
+  border-color: var(--modal-cadastro-senha-success);
+}
+
+.modal__field-input-icons-container.success  .fa-check-circle{
+  visibility: visible;
+  color: var(--modal-cadastro-senha-success);
+}
+
+.modal__field-input-icons-container.error .modal__field-input,
+.modal__field-input-icons-container.error .modal__field-input-senha {
+  border-color: var(--modal-cadastro-senha-error);
+}
+
+.modal__field-input-icons-container.error  .fa-exclamation-circle{
+  visibility: visible;
+  color: var(--modal-cadastro-senha-error);
+}
+
+.modal__field-input-icons-container.error .modal__field-small{
+  visibility: visible;
+  color: var(--modal-cadastro-senha-error);
+}
+
+.modal__field-input-icons{
+  position: absolute;
+  margin-left: 275px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.modal__field-small{   
+  text-align: left;
+  font-size: 0.8rem; 
+  visibility: hidden; 
+  margin-top: -8px;  
+}
+
+.modal__field-input-senha-img {
+position: absolute;
+margin-left: 240px;
+margin-top: 15px;
+cursor: pointer;
+}
+
+.modal__btn-group { 
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+   margin-top: 10px;
+}
+
+.modal__botao-confirmar { 
+  margin-right: 15px;
+}
+
+.fa-lg {
+  display: none;
+}
+
+/*#############################################################################*/
+@media (max-width: 450px) {
+  .modal__container {   
+    width: 15.5rem;
+    padding: 1rem;
+  }
+  
+  .modal__title {
+    font-size: 1rem;         
+  }
+  
+  .modal__required-field-title{   
+    font-size: 0.5rem;
+    margin-top: 0.7rem;      
+  }
+    
+  .modal__field{   
+    padding-bottom: 0.6rem;
+  }
+  
+  .modal__field-label { 
+    font-size: 0.75rem;   
+  }
+  
+  .modal__field-input-senha,
+  .modal__field-input {   
+    height: 1.5rem;
+    width: 12rem;    
+    margin-bottom: 0.6rem;    
+  }
+  
+    .modal__field-input-icons{   
+    margin-left: 12.5rem;
+    margin-top: 0.3rem; 
+  }
+  
+  .modal__field-small{      
+    font-size: 0.6rem;   
+  } 
+  
+  .modal__field-input-senha-img {
+  margin-left: 10.5rem;
+  margin-top: 0.4rem;
+  }
+  
+  .modal__btn-group { 
+   margin-right: 1.2rem;
+  }
+}
+
+
+/*#############################################################################*/
+@media (min-width: 1800px) {
+  .modal__container {   
+    width: 30rem;
+    padding: 2.5rem;
+  }
+  
+  .modal__title {
+    font-size: 2rem;         
+  }
+  
+  .modal__required-field-title{   
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;      
+  }
+    
+  .modal__field{   
+    padding-bottom: 1.5rem;
+  }
+  
+  .modal__field-label { 
+    font-size: 1.2rem;   
+  }
+  
+  .modal__field-input-senha,
+  .modal__field-input {   
+    height: 2.2rem;
+    width: 24rem;    
+    margin-bottom: 1rem; 
+    font-size: 1.3rem;
+  }
+  
+    .modal__field-input-icons{   
+    margin-left: 24.5rem;
+    margin-top: 0.4rem; 
+    font-size: 1.4rem;    
+  }
+  
+  .modal__field-small{      
+    font-size: 1rem;   
+  } 
+  
+  .modal__field-input-senha-img {
+  margin-left: 22rem;
+  margin-top: 0.5rem;
+  width: 20px;
+  height: 20px;
+  } 
+  
+  .modal__btn-group { 
+    margin-right: 1rem;
+   }
+}
+
+
+
+
+
+

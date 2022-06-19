@@ -1,0 +1,70 @@
+:root {
+  --botao-limpar:  #E9E8E8;
+  --botao-limpar--hover:  #6498D2;  
+  --texto-limpar: #517EB1;
+  --texto-limpar--hover: #E9E8E8;
+  --icone-limpar:#E9E8E8;
+  --icone-limpar--hover: #E9E8E8;
+}
+
+.btn-limpar {
+  border: 1px solid var(--texto-limpar);
+  color: var(--texto-limpar);
+  font-size: 14px;  
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  cursor: pointer; 
+  padding:0.5rem 1.8rem 0.5rem 1.8rem;
+  background-color: var(--botao-limpar);
+  transition: 0.5s;
+}
+
+.btn-limpar:hover{
+  border-color: var(--botao-limpar--hover);
+  color: var(--texto-limpar--hover);
+  background-color: var(--botao-limpar--hover);
+  box-shadow: 0 0 10px  var(--botao-limpar--hover),  0 0 2px var(--botao-limpar--hover);
+}
+
+
+.botao__icone-limpar {
+  margin-right: 5px; 
+  vertical-align: top;  
+  fill: var(--icone-limpar);  
+   height:15px;   
+   stroke: var(--texto-limpar);
+} 
+
+.btn-limpar:hover .botao__icone-limpar {  
+  fill: var(--botao-limpar); 
+  stroke: var(--icone-limpar--hover); 
+}
+
+
+/*#############################################################################*/
+@media (max-width: 350px) {
+  .btn-limpar{    
+    font-size: 0.5rem;             
+  }
+
+  .botao__icone-limpar {
+    width:10px;
+    height:8px;   
+  } 
+}
+
+/*#############################################################################*/
+@media (min-width: 1850px) {
+  .btn-limpar{      
+    font-size: 1.3rem;        
+  }
+
+  .botao__icone-limpar {
+    width:25px;
+    height:20px;  
+    margin-top: 2px;
+  } 
+}
+
